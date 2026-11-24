@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b14"><title>PixelForge AI — Image Generator</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div>
+<header class="top"><a class="brand" href="#"><span class="logo">✦</span><span>PixelForge <i>AI</i></span></a><span class="tag">AI IMAGE STUDIO</span></header>
+<main>
+<section class="intro"><div class="eyebrow">✧ YOUR IDEAS, MADE VISUAL</div><h1>Imagine it.<br><span>Create it.</span></h1><p>Apne imagination ko stunning AI images mein badlo.</p></section>
+<section class="studio">
+<div class="panel">
+<label class="label" for="prompt">IMAGE DESCRIPTION <small>Apni image ke baare mein likhein</small></label>
+<textarea id="prompt" placeholder="Jaise: Ek futuristic city, neon lights, baarish, cinematic 3D look..."></textarea>
+<div class="label">VISUAL STYLE</div>
+<div class="styles" id="styles">
+<button class="style active" data-style="3D Realistic">◈ <span>3D Realistic</span></button>
+<button class="style" data-style="Photorealistic DSLR">◎ <span>DSLR Photo</span></button>
+<button class="style" data-style="Cinematic">▣ <span>Cinematic</span></button>
+<button class="style" data-style="Anime illustration">✿ <span>Anime</span></button>
+<button class="style" data-style="Fantasy digital art">✧ <span>Fantasy</span></button>
+<button class="style" data-style="Minimalist design">◇ <span>Minimal</span></button>
+</div>
+<div class="label">IMAGE SIZE</div>
+<div class="sizes">
+<button class="size active" data-size="1024x1536">▯ <span>Mobile wallpaper</span></button>
+<button class="size" data-size="1024x1024">□ <span>Square</span></button>
+<button class="size" data-size="1536x1024">▭ <span>Landscape</span></button>
+</div>
+<button id="generate" class="generate"><span>✦</span> Generate image <b>→</b></button>
+<p class="note">Generation ke liye API usage charges lag sakte hain.</p>
+</div>
+<div class="preview panel">
+<div class="preview-head"><span>YOUR CANVAS</span><span class="live">● READY</span></div>
+<div class="canvas" id="canvas"><div class="placeholder"><div class="spark">✧</div><strong>Your creation awaits</strong><span>Prompt likhein aur Generate dabayein</span></div></div>
+<div class="result-actions"><span id="status">Abhi koi image nahi bani</span><a id="download" class="download disabled" download="pixelforge-image.png">↓ Download</a></div>
+</div>
+</section>
+<footer>Made for creators <span>✦</span> PixelForge AI</footer>
+</main>
+<script src="/app.js"></script>
+</body></html>
